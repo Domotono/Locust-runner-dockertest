@@ -14,5 +14,5 @@ ENV PGW="127.0.0.1:9091"
 
 VOLUME ["/home"]
 
-ENTRYPOINT ["java", "-jar", "app.jar", "--pushgateway=$PGW", "--spring.config.location=application.properties", "-Djava.security.egd=file:/dev/./urandom"]
+ENTRYPOINT ["java", "-jar", "app.jar", "--pushgateway=${PGW}", "--spring.config.location=application.properties", "-Djava.security.egd=file:/dev/./urandom"]
 
